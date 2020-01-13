@@ -94,7 +94,7 @@ If your code doesn't compile in ElixirLS, it may be because ElixirLS compiles co
 
 ## Building and running
 
-Run `mix compile`, then `mix elixir_ls.release -o <release_dir>`. This builds the language server and debugger as a set of `.ez` archives and creates `.sh` and `.bat` scripts to launch them.
+Run `mix deps.get`, `mix compile`, then `mix elixir_ls.release -o <release_dir>`. This builds the language server and debugger as a set of `.ez` archives and creates `.sh` and `.bat` scripts to launch them.
 
 If you're packaging these archives in an IDE plugin, make sure to build using the minimum supported OTP version for the best backwards-compatibility. Alternatively, you can use a [precompiled release](https://github.com/JakeBecker/elixir-ls/releases).
 
